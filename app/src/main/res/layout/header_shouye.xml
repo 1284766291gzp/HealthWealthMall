@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@mipmap/ic_launcher"
+        app:delay_time="3000"
+        app:image_scale_type="center_crop"
+        app:indicator_drawable_selected="@drawable/ic_indicator_hl"
+        app:indicator_drawable_unselected="@drawable/ic_indicator_nor"
+        app:indicator_height="7dp"
+        app:indicator_margin="3dp"
+        app:indicator_width="7dp"
+        app:is_auto_play="true" />
+
+
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+        <RadioButton
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/radio_shop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/shouye_1"
+            android:gravity="center"
+            android:text="图文推广"
+            android:textColor="@color/colorBlack"
+            android:textSize="13sp" />
+        <RadioButton
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/radio_wallet"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/shouye_2"
+            android:gravity="center"
+            android:text="企业介绍"
+            android:textColor="@color/colorBlack"
+            android:textSize="13sp" />
+        <RadioButton
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/radio_study"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/shouye_3"
+            android:gravity="center"
+            android:text="企业官网"
+            android:textColor="@color/colorBlack"
+            android:textSize="13sp" />
+        <RadioButton
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/radio_invite_rewards"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/shouye_4"
+            android:gravity="center"
+            android:text="邀请奖励"
+            android:textColor="@color/colorBlack"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+
+    <View
+
+        android:background="@color/bg_247"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
+
+</LinearLayout>

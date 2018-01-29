@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_247"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_title" />
+
+    <LinearLayout
+        android:layout_margin="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorLine"
+            android:layout_height="0.5dp"/>
+        <RelativeLayout
+            android:id="@+id/rl_usericon"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            >
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_marginLeft="14dp"
+                android:id="@+id/tv_yan"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:text="头像"
+                android:textColor="@color/txt_33"
+                android:textSize="15sp"  />
+
+
+            <com.lxkj.healthwealthmall.app.view.CircleImageView
+                android:id="@+id/img_usericon"
+                android:layout_toLeftOf="@+id/image"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/gerenxinxi"
+              />
+
+            <ImageView
+                android:layout_marginLeft="14dp"
+                android:id="@+id/image"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/jinru"/>
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorLine"
+            android:layout_height="0.5dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="昵称"
+                android:textColor="@color/txt_33"
+                android:textSize="15sp" />
+
+            <TextView
+                android:drawableRight="@drawable/jinru"
+                android:id="@+id/txt_name"
+                android:layout_centerVertical="true"
+                android:textColor="@color/txt_33"
+                android:textSize="15sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              android:text=""
+             />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorLine"
+            android:layout_height="0.5dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_phone"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="电话"
+                android:textColor="@color/txt_33"
+                android:textSize="15sp" />
+
+            <TextView
+                android:drawableRight="@drawable/jinru"
+                android:id="@+id/txt_position"
+                android:layout_centerVertical="true"
+                android:textColor="@color/txt_33"
+                android:textSize="15sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/colorLine"
+            android:layout_height="0.5dp"/>
+    </LinearLayout>
+
+</LinearLayout>

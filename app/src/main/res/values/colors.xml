@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#BAD253</color>
+    <color name="colorPrimaryDark">#BAD253</color>
+    <color name="colorAccent">#BAD253</color>
+
+
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorTheme">#BAD253</color>
+    <!--tab标签栏文字的颜色-->
+    <color name="colorTabText">#585858</color>
+    <!--分割线-->
+    <color name="colorLine">#EBEBEB</color>
+    <!--页面背景的颜色-->
+    <color name="colorPageBg">#f2f4f5</color>
+    <!--消费或者提现-->
+    <color name="reduce_money">#d55052</color>
+    <color name="txt_33">#333333</color>
+    <color name="txt_66">#666666</color>
+    <color name="txt_shouye_price_red">#ED2B2C</color>
+
+    <color name="bg_247">#F7F7F7</color>
+    <color name="statusbarcolor">#f8faf1</color>
+
+
+
+</resources>

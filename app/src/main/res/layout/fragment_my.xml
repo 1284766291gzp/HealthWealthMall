@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_247"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_userinfo"
+        android:background="@drawable/wode_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="12dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/image_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:src="@drawable/wodetop02" />
+
+
+        <ImageView
+            android:layout_marginTop="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:id="@+id/image_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="15dp"
+            android:src="@drawable/wodetop01" />
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.lxkj.healthwealthmall.app.view.CircleImageView
+                android:id="@+id/img_usreicon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/wode_touxiang" />
+            <TextView
+
+                android:id="@+id/txt_name"
+                android:textColor="@color/txt_33"
+                android:textSize="17sp"
+                android:text="用户名称"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/lin1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_bg_kuang"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_wallet"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/wode01"
+            android:gravity="center"
+            android:text="我的钱包"
+            android:textColor="#4D4D4D"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radio_discount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/wode02"
+            android:gravity="center"
+            android:text="我的推广"
+            android:textColor="#4D4D4D"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radio_corcen"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/wode03"
+            android:gravity="center"
+            android:text="成为代理商"
+            android:textColor="#4D4D4D"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:padding="12dp"
+        android:id="@+id/rel_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin1"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/my_bg_kuang">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的订单"
+            android:textColor="@color/txt_33"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="全部订单>>"
+            android:textColor="@color/txt_33"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/rel_order"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/colorLine" />
+
+    <LinearLayout
+        android:id="@+id/lin2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel_order"
+        android:background="@drawable/my_bg_kuang"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radio_paying"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/wode04"
+            android:gravity="center"
+            android:text="待发货"
+            android:textColor="@color/txt_33"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radio_confirm"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/wode05"
+            android:gravity="center"
+            android:text="待收货"
+            android:textColor="@color/txt_33"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radio_comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/wode06"
+            android:gravity="center"
+            android:text="待评价"
+            android:textColor="@color/txt_33"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/radio_refound"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/wode07"
+            android:gravity="center"
+            android:text="退款"
+            android:textColor="@color/txt_33"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_person_info"
+        android:paddingLeft="15dp"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="51dp">
+
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/img"
+            android:src="@drawable/wode08"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="13dp"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:text="个人资料"
+            android:layout_toRightOf="@id/img"
+            android:textColor="@color/txt_33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/jinru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_address"
+        android:paddingLeft="15dp"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="51dp">
+
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/img1"
+            android:src="@drawable/wode09"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="13dp"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:text="地址管理"
+            android:layout_toRightOf="@id/img1"
+            android:textColor="@color/txt_33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/jinru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:paddingLeft="15dp"
+        android:background="@color/colorWhite"
+        android:layout_marginTop="5dp"
+        android:id="@+id/rl_question"
+        android:layout_width="match_parent"
+        android:layout_height="51dp">
+
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/img2"
+            android:src="@drawable/wode10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginLeft="13dp"
+            android:layout_centerVertical="true"
+            android:textSize="15sp"
+            android:text="意见反馈"
+            android:layout_toRightOf="@id/img2"
+            android:textColor="@color/txt_33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:layout_marginRight="15dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/jinru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+
+  <View
+      android:background="@color/colorTheme"
+      android:layout_width="match_parent"
+      android:layout_height="80dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="-60dp"
+        android:background="@drawable/qianbao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <ImageView
+          android:layout_gravity="center_horizontal"
+          android:layout_marginTop="20dp"
+          android:src="@drawable/qianbao_biaoti"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txt_history"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorBlack"
+            android:textSize="36sp"
+            android:text=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textSize="13sp"
+                    android:textColor="#1A1A1A"
+                    android:text="可提现金额(元)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txt_money"
+                    android:textColor="#F78E00"
+                    android:textSize="18sp"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <View
+                android:background="#E9CA99"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"/>
+            <LinearLayout
+                android:layout_marginLeft="0.5dp"
+                android:layout_marginRight="0.5dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textSize="13sp"
+                    android:textColor="#1A1A1A"
+                    android:text="已提现金额(元)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txt_endmoney"
+                    android:textColor="#F78E00"
+                    android:textSize="18sp"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:background="#E9CA99"
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"/>
+            <LinearLayout
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:textSize="13sp"
+                    android:textColor="#1A1A1A"
+                    android:text="结算中金额(元)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txt_waitmoney"
+                    android:textColor="#F78E00"
+                    android:textSize="18sp"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+    <TextView
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tv_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/confirm_bg"
+        android:text="立即提现"
+        android:textColor="@color/colorWhite"
+        android:textSize="17sp" />
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <TextView
+android:layout_gravity="center_vertical"
+       android:layout_marginLeft="15dp"
+        android:layout_marginRight="10dp"
+        android:background="#F78E00"
+        android:layout_width="3dp"
+        android:layout_height="15dp" />
+
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:textSize="13sp"
+        android:textColor="#F78E00"
+        android:text="收支明细"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
